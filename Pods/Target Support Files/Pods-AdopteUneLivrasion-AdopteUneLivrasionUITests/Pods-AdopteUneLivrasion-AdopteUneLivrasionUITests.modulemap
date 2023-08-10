@@ -1,0 +1,6 @@
+framework module Pods_AdopteUneLivrasion_AdopteUneLivrasionUITests {
+  umbrella header "Pods-AdopteUneLivrasion-AdopteUneLivrasionUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
