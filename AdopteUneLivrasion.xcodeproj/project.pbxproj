@@ -55,10 +55,10 @@
 		278C34582A855CCA0088BDB9 /* HoursCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278C34572A855CCA0088BDB9 /* HoursCVC.swift */; };
 		2794F81E2A69A72700F53979 /* YearlySalesByMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794F81D2A69A72700F53979 /* YearlySalesByMonth.swift */; };
 		2794F8212A69A75800F53979 /* StatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794F8202A69A75800F53979 /* StatsModel.swift */; };
+		279BDE8A2A8D55710043731C /* StoreHoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BDE892A8D55710043731C /* StoreHoursModel.swift */; };
 		27C3AD6E2A40CF0F00EAA282 /* OrdersCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C3AD6D2A40CF0F00EAA282 /* OrdersCVC.swift */; };
 		27C913CE2A5DCA5D0063ED46 /* EdititemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C913CD2A5DCA5D0063ED46 /* EdititemsVC.swift */; };
 		27C913D12A5DCB9C0063ED46 /* MenufoodTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C913D02A5DCB9C0063ED46 /* MenufoodTVC.swift */; };
-		27CDEFF42A8BFDCB003A2C26 /* StoreHoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CDEFF32A8BFDCB003A2C26 /* StoreHoursModel.swift */; };
 		27D073692A39F0140098E859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D073682A39F0140098E859 /* AppDelegate.swift */; };
 		27D0736B2A39F0140098E859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0736A2A39F0140098E859 /* SceneDelegate.swift */; };
 		27D073702A39F0140098E859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D0736E2A39F0140098E859 /* Main.storyboard */; };
@@ -148,10 +148,10 @@
 		278C34572A855CCA0088BDB9 /* HoursCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursCVC.swift; sourceTree = "<group>"; };
 		2794F81D2A69A72700F53979 /* YearlySalesByMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlySalesByMonth.swift; sourceTree = "<group>"; };
 		2794F8202A69A75800F53979 /* StatsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsModel.swift; sourceTree = "<group>"; };
+		279BDE892A8D55710043731C /* StoreHoursModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreHoursModel.swift; sourceTree = "<group>"; };
 		27C3AD6D2A40CF0F00EAA282 /* OrdersCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCVC.swift; sourceTree = "<group>"; };
 		27C913CD2A5DCA5D0063ED46 /* EdititemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdititemsVC.swift; sourceTree = "<group>"; };
 		27C913D02A5DCB9C0063ED46 /* MenufoodTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenufoodTVC.swift; sourceTree = "<group>"; };
-		27CDEFF32A8BFDCB003A2C26 /* StoreHoursModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreHoursModel.swift; path = ../../../../../../Desktop/StoreHoursModel.swift; sourceTree = "<group>"; };
 		27D073652A39F0140098E859 /* AdopteUneLivrasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdopteUneLivrasion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D073682A39F0140098E859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27D0736A2A39F0140098E859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -527,7 +527,7 @@
 		278C34592A8561CC0088BDB9 /* StoreHoursModel */ = {
 			isa = PBXGroup;
 			children = (
-				27CDEFF32A8BFDCB003A2C26 /* StoreHoursModel.swift */,
+				279BDE892A8D55710043731C /* StoreHoursModel.swift */,
 			);
 			path = StoreHoursModel;
 			sourceTree = "<group>";
@@ -1036,7 +1036,7 @@
 				276909FC2A8419DF00371ECD /* SettingsVC.swift in Sources */,
 				273F057B2A7ECF7C005A9A5E /* TransactionModel.swift in Sources */,
 				275E75352A7D7AA4002CEDA5 /* RejectTVC.swift in Sources */,
-				27CDEFF42A8BFDCB003A2C26 /* StoreHoursModel.swift in Sources */,
+				279BDE8A2A8D55710043731C /* StoreHoursModel.swift in Sources */,
 				271E08382A754ECD00F70246 /* MenuSizeTVC.swift in Sources */,
 				273A0DFF2A58B44C004A8B46 /* DeleteVC.swift in Sources */,
 				27EE0BDE2A3B6BB500CADF99 /* AppStoryboards.swift in Sources */,
