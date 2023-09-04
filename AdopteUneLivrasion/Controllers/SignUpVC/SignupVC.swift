@@ -68,6 +68,7 @@ class SignupVC: BaseVC {
     @objc func userTapped(_ sender: UITapGestureRecognizer) {
         user_nameTopConstraint.constant = 12
         user_nameTF.isUserInteractionEnabled = true
+        user_nameTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -76,6 +77,7 @@ class SignupVC: BaseVC {
     @objc func resturantTapped(_ sender: UITapGestureRecognizer) {
         resturant_nameTopConstraint.constant = 12
         resturant_nameTF.isUserInteractionEnabled = true
+        resturant_nameTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -84,6 +86,7 @@ class SignupVC: BaseVC {
     @objc func nameTapped(_ sender: UITapGestureRecognizer) {
         nameTopConstraint.constant = 12
         nameTF.isUserInteractionEnabled = true
+        nameTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -92,6 +95,7 @@ class SignupVC: BaseVC {
     @objc func emailTapped(_ sender: UITapGestureRecognizer) {
         emailTopConstraint.constant = 12
         emailTF.isUserInteractionEnabled = true
+        emailTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -100,6 +104,7 @@ class SignupVC: BaseVC {
     @objc func addressTapped(_ sender: UITapGestureRecognizer) {
         addressTopConstraint.constant = 12
         addressTF.isUserInteractionEnabled = true
+        addressTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -108,6 +113,7 @@ class SignupVC: BaseVC {
     @objc func passwordTapped(_ sender: UITapGestureRecognizer) {
         passwordTopConstraint.constant = 12
         passwordTF.isUserInteractionEnabled = true
+        passwordTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -161,10 +167,7 @@ class SignupVC: BaseVC {
         }
         
     }
-    
-    
-    
-    
+  
     @IBAction func backbtn(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

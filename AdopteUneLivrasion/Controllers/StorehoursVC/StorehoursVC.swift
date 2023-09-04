@@ -9,25 +9,31 @@ import UIKit
 
 class StorehoursVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
     var Storehoursmodel = [StoreHoursModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchhours()
-           self.navigationController?.isNavigationBarHidden = true
-           self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
         let layout = UICollectionViewFlowLayout()
-               let screenWidth = UIScreen.main.bounds.width
-               let cellWidth = (screenWidth - 60) / 2 // Adjust spacing as needed
-               layout.itemSize = CGSize(width: cellWidth, height: 100)
-               layout.minimumInteritemSpacing = 10 // Adjust spacing as needed
-               collectionView.collectionViewLayout = layout
-       }
-       
-
-       @IBAction func BackBtn(_ sender : UIButton)
-       {
-           self.navigationController?.popViewController(animated: true)
-       }
+        let screenWidth = UIScreen.main.bounds.width
+        let cellWidth = (screenWidth - 60) / 2 // Adjust spacing as needed
+        layout.itemSize = CGSize(width: cellWidth, height: 100)
+        layout.minimumInteritemSpacing = 10 // Adjust spacing as needed
+        collectionView.collectionViewLayout = layout
+    }
+    @IBAction func BackBtn(_ sender : UIButton)
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func addbtn(_ sender : UIButton)
+    {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AddstorehoursVC") as! AddstorehoursVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     func fetchhours()
     {
         if let accessToken = Utility.getUser()?.accesstoken {
@@ -65,7 +71,7 @@ class StorehoursVC: UIViewController {
             
         }
     }
-
+    
 }
 extension StorehoursVC : UICollectionViewDataSource , UICollectionViewDelegate
 {
@@ -89,7 +95,7 @@ extension StorehoursVC : UICollectionViewDataSource , UICollectionViewDelegate
             
             let formattedStartTime = outputFormatter.string(from: startTimeDate)
             let formattedEndTime = outputFormatter.string(from: endTimeDate)
-
+            
             cell.date.text = formattedStartTime + "  " + formattedEndTime
         } else {
             print("Invalid time format")
@@ -97,7 +103,7 @@ extension StorehoursVC : UICollectionViewDataSource , UICollectionViewDelegate
         
         return cell
     }
-
+    
     
     
 }

@@ -23,6 +23,7 @@ class ForgotVC: BaseVC {
     @objc func labelTapped(_ sender: UITapGestureRecognizer) {
         namelblTopConstraint.constant = 12
         namelblTF.isUserInteractionEnabled = true
+        namelblTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
@@ -98,9 +99,20 @@ class ForgotVC: BaseVC {
                 
                 do {
                     if let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                       let message = jsonResponse["message"] as? String {
+                       let message = jsonResponse["status_code"] as? Int {
                         DispatchQueue.main.async { [weak self] in
-                            self?.showTool(msg: message, state: .error)
+                            if message == 200
+                            {
+                                let vc = self?.storyboard?.instantiateViewController(withIdentifier: "otpVC") as! otpVC
+                                vc.email = self?.namelblTF.text ?? ""
+                                self?.navigationController?.pushViewController(vc, animated: true)
+                            }
+                            else
+                            {
+                                self?.showTool(msg: jsonResponse["message"] as? String ?? "" , state: .error)
+                            }
+                            
+                            
                         }
                         
                     }

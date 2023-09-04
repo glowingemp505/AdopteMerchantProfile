@@ -39,6 +39,7 @@ class SigninVC: BaseVC {
         @objc func labelTapped(_ sender: UITapGestureRecognizer) {
             namelblTopConstraint.constant = 12
             namelblTF.isUserInteractionEnabled = true
+            namelblTF.becomeFirstResponder()
             UIView.animate(withDuration: 0.3) {
                 self.view.layoutIfNeeded()
             }
@@ -46,6 +47,7 @@ class SigninVC: BaseVC {
     @objc func passTapped(_ sender: UITapGestureRecognizer) {
         passlblTopConstraint.constant = 12
         passlblTF.isUserInteractionEnabled = true
+        passlblTF.becomeFirstResponder()
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }

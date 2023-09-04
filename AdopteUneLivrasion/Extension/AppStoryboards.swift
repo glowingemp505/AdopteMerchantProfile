@@ -47,7 +47,9 @@ enum viewControllers: String {
          InformationVC = "InformationVC",
          AddressVC = "AddressVC",
          SettingsVC = "SettingsVC",
-         StorehoursVC = "StorehoursVC"
+         StorehoursVC = "StorehoursVC",
+         otpVC = "otpVC",
+         AddstorehoursVC = "AddstorehoursVC"
     
     
 }
